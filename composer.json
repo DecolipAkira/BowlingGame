@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Kata\\": "src"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^7.5"
+    }
+}
