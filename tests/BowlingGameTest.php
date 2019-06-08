@@ -26,7 +26,7 @@ class BowlingGameTest extends TestCase
         $this->assertEquals(20, $this->game->score());
     }
 
-    public function testeOneSpare() {
+    public function testOneSpare() {
         $this->rollSpare();
         $this->game->roll(3);
         $this->rollMany(17, 0);
@@ -45,7 +45,7 @@ class BowlingGameTest extends TestCase
 
     public function testPerfectGame() {
         $this->rollMany(12, 10);
-        
+
         $this->assertEquals(300, $this->game->score());
     }
 
